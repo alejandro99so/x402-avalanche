@@ -9,7 +9,6 @@ import { ReactNode } from 'react'
 
 // Get Reown project ID and network from environment
 const projectId = process.env.NEXT_PUBLIC_REOWN_PROJECT_ID || ''
-const selectedNetwork = process.env.NEXT_PUBLIC_NETWORK || 'avalanche-fuji'
 
 if (!projectId) {
   console.warn('NEXT_PUBLIC_REOWN_PROJECT_ID is not set. Reown features will be limited.')
