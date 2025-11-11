@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { requirePayment } from '@/lib/avalanche-payment'
 
 // Replace this with your wallet address where you want to receive payments
-const PAYMENT_RECIPIENT = '0x1d5ab913fb1b76d7ed2c9a731f39be76cb0d34b1' as const
+const PAYMENT_RECIPIENT = process.env.NEXT_PUBLIC_RECEIVER_ADDRESS as `0x${string}`
 
 const AVALANCHE_CURIOSITIES = [
   {
